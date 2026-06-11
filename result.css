@@ -4,14 +4,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(minh-bach-tr-ng-RZW1Ieq6Jm0-unsplash.jpg);
+    background: url("minh-bach-tr-ng-RZW1Ieq6Jm0-unsplash.jpg");
     background-size: cover;
     background-position: center;
 }
 
 .result-box {
-    width: 400px;
-    padding: 40px;
+    max-width: 400px;
+    width: 90%;
+    padding: 30px;
     background: rgba(0,0,0,0.4);
     border-radius: 20px;
     text-align: center;
@@ -22,38 +23,37 @@ body {
 
 /* Heading */
 .result-box h1 {
-    margin: 0;
-    font-size: 32px;
+    font-size: 1.8rem;
     margin-bottom: 20px;
 }
 
 /* City */
 #cityName {
-    font-size: 28px;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
 /* Day & Date */
 #day, #date {
-    font-size: 40px;
-    margin-bottom: 15px 0;
+    font-size: 1.2rem;
+    margin: 5px 0;
 }
 
 /* Temperature */
 #temp {
-    font-size: 40px;
-    margin-bottom: 15px 0;
+    font-size: 1.5rem;
+    margin: 10px 0;
 }
 
 /* Description */
 #desc {
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 /* AQI */
 #aqi {
-    margin-top: 20px;
-    font-size: 18px;
+    margin-top: 15px;
+    font-size: 1rem;
 }
 
 /* Button */
@@ -64,50 +64,33 @@ button {
     border-radius: 8px;
     background: skyblue;
     cursor: pointer;
+    font-size: 1rem;
 }
 
-/* Mobile screens */
+button:hover {
+    background: deepskyblue;
+    color: white;
+}
+
+/* 📱 Mobile */
 @media (max-width: 600px) {
-    .result-box {
-        width: 90%;
-        padding: 20px;
-    }
-
-    .result-box h1 {
-        font-size: 24px;
-        margin-bottom: 15px;
-    }
-
-    #cityName, #day, #date, #temp {
-        font-size: 20px;
-    }
-
-    #desc, #aqi {
-        font-size: 14px;
-    }
-
-    button {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
+  .result-box {
+    padding: 20px;
+  }
+  .result-box h1 {
+    font-size: 1.5rem;
+  }
+  #cityName, #temp {
+    font-size: 1.2rem;
+  }
 }
 
-/* Tablets */
+/* 📲 Tablets */
 @media (min-width: 601px) and (max-width: 1024px) {
-    .result-box {
-        width: 70%;
-        padding: 30px;
-    }
-
-    .result-box h1 {
-        font-size: 28px;
-    }
-
-    #cityName, #day, #date, #temp {
-        font-size: 24px;
-    }
-
-    #desc, #aqi {
-        font-size: 16px;
-    }
+  .result-box h1 {
+    font-size: 1.6rem;
+  }
+  #cityName, #temp {
+    font-size: 1.3rem;
+  }
 }
