@@ -1,171 +1,75 @@
-<<<<<<< HEAD
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Background */
 body {
-=======
-<<<<<<< HEAD
-*{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(image.png);
+  background-size: cover;
+  text-align: center;
 }
 
-body{
-    background-color:darkseagreen;
-    text-align:center;
-}
-
-.container{
-    height: 100vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-
-
-
-}
-
-.game{
-    height:60vmin;
-    width:60vmin;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    align-items: center;
-    gap:1.5vmin;
-}
-
-.box{
-    height:18vmin;
-    width:18vmin;
-    border-radius:1rem;
-    box-shadow:0.0 1rem rgba(0,0,0,0.3);
-    border:none;
-    font-size:8vmin;
-    color:darkviolet
-
-}
-
-#reset-btn{
-    margin-top:1rem;
-    font-size:1.25rem;
-    background-color:#191913;
-    color:#fff;
-    border-radius:1rem;
-    border:none;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .game {
-        height: 80vmin;
-        width: 80vmin;
-        gap: 2vmin;
-    }
-
-    .box {
-        height: 24vmin;
-        width: 24vmin;
-        font-size: 10vmin;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    #reset-btn {
-        font-size: 1rem;
-        padding: 0.5rem 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .game {
-        height: 90vmin;
-        width: 90vmin;
-        gap: 2.5vmin;
-    }
-
-    .box {
-        height: 28vmin;
-        width: 28vmin;
-        font-size: 12vmin;
-    }
-
-    h2 {
-        font-size: 1.25rem;
-    }
-
-    #reset-btn {
-        font-size: 0.9rem;
-        padding: 0.4rem 0.8rem;
-    }
-}
-=======
-body{
->>>>>>> 2a5fee5a15eda49bdaff88f788b5d11901a2a55e
-    background-image: url("image.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/** main weather box styling **/
+/* Weather Box */
 .weather-box {
-    max-width: 600px;
-    width: 90%;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+  max-width: 600px;
+  width: 90%;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/** heading styling **/
+/* Heading */
 .weather-box h1 {
-    color: black;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    text-decoration: underline;
+  color: black;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-decoration: underline;
 }
 
-/** input field styling **/
+/* Input */
 .weather-box input {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 8px;
-    background: white;
-    font-size: 1rem;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  font-size: 1rem;
 }
 
-/** button styling **/
+/* Button */
 .weather-box button {
-    background: deepskyblue;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
+  background: deepskyblue;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 .weather-box button:hover {
-    background: dodgerblue;
-    color: white;
+  background: dodgerblue;
+  color: white;
 }
 
 /* 📱 Mobile screens */
 @media (max-width: 600px) {
+  .weather-box {
+    padding: 20px;
+  }
   .weather-box h1 {
     font-size: 1.8rem;
     margin-bottom: 20px;
-  }
-  .weather-box {
-    padding: 20px;
   }
 }
 
@@ -175,27 +79,21 @@ body{
     font-size: 2rem;
   }
 }
-<<<<<<< HEAD
-=======
 
+/* Container Flex Layout */
 .container {
   display: flex;
-  flex-direction: column; /* mobile ke liye */
+  flex-direction: column; /* Mobile */
 }
 
 @media (min-width: 768px) {
   .container {
-    flex-direction: row; /* desktop ke liye */
+    flex-direction: row; /* Desktop */
   }
 }
 
+/* Images */
 img {
   max-width: 100%;
   height: auto;
 }
-
-
-
-
->>>>>>> 16b3e360e1923308151dec508d3e3931e939a996
->>>>>>> 2a5fee5a15eda49bdaff88f788b5d11901a2a55e
